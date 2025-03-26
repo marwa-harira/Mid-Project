@@ -1,0 +1,76 @@
+/* ============================ Accordion =========================== */
+#Accordion {
+    padding-top: 56px;
+
+    h2 {
+        padding: 56px 70px 0 70px;
+    }
+
+    .card {
+        padding: 0 70px;
+        margin: 50px 0;
+        display: grid;
+        grid-template-rows: repeat(5, 64px);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+
+        .accordion,
+        .accordionn {
+            padding: 20px 30px;
+            background-color: #f5f5f5;
+            border: none;
+            border-radius: 8px;
+            appearance: none;
+            background-image: url('./../images/icons/vector.svg');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 10px;
+            font-weight: 600;
+
+
+            h5 {
+
+                font-family: 'Exo', sans-serif;
+                font-weight: 600;
+            }
+        }
+
+        .accordionn {
+            background-position: right 20px top 25px;
+            background-size: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            h5 {
+                padding-top: 50px;
+                color: #ff782d;
+                font-family: 'Exo', sans-serif;
+                font-weight: 600;
+
+            }
+
+
+            p {
+                color: #555555;
+                padding-bottom: 40px;
+
+            }
+
+        }
+
+        .item3 {
+            grid-column: 1;
+            grid-row: 2 / span 2;
+        }
+    }
+
+    img {
+        padding-left: 70px;
+        max-width: 556px;
+        min-height: 312px;
+        background-position: bottom left;
+    }
+}
